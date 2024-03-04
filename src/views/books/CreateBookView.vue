@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import CardBook from '@/components/CardBook.vue';
+
 </script>
 
 <template>
-    
- 
+    <h2>Cadastro de livro</h2> 
 </template>
 
 <style scoped>
