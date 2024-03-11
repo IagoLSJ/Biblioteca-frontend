@@ -1,25 +1,13 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import Menu from './components/Menu.vue';
-import CardBook from './components/CardBook.vue';
+import AppBar from './components/AppBar.vue';
+import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
-  <Menu />
-<div class="container">
-  <div class="cards">
-    <CardBook v-for="n in 10"/>
-  </div>
-</div>
-  
+    <v-app>
+        <AppBar v-if=" $route.path != '/' && $route.path != '/user/create'" />
+        <RouterView />
+    </v-app>
 </template>
 
-<style scoped>
-.cards{
-  display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-    
-}
-</style>
+<style scoped></style>

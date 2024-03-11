@@ -1,17 +1,25 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://marketplace.canva.com/EAE4oJOnMh0/1/0/1003w/canva-capa-de-livro-de-suspense-O7z4yw4a5k8.jpg" alt="Imagem de capa do card">
-  <div class="card-body">
-    <h5 class="card-title">Título do card</h5>
-    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-    <a href="#" class="btn btn-primary">Alugar</a>
-  </div>
-</div>
+  <v-layout>
+    <v-flex xs12 sm6 offset-sm3>
+      <v-card>
+        <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
+
+        <v-card-title primary-title>
+          <div>
+            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+            <div> Title </div>
+            <div>Author</div>
+          </div>
+        </v-card-title>
+
+        <v-card-actions>
+          <v-btn flat color="orange">Alugar</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
-<style scoped>
-</style>
+<script setup>
+
+</script>
