@@ -20,13 +20,18 @@ export default {
       if(book.titulo == ""){
         this.error.body = "O titulo do livro esta vazio"
         this.error.isError = true
+
         return false;
       }
       if(book.autor == ""){
+        this.error.body = "O autor do livro esta vazio"
+        this.error.isError = true
         return false;
 
       }
       if(book.exemplares < 0){
+        this.error.body = "O numero de exemplares do livro esta vazio"
+        this.error.isError = true
         return false;
       }
 
@@ -58,7 +63,7 @@ export default {
       <v-btn color="success" class="mr-4" @click="submit">
         cadastrar
       </v-btn>
-      <v-alert closable text={{ error.title }} type="error"></v-alert>
+      <v-alert closable :text=error.body type="error" v-if="error.isError"></v-alert>
     </v-form>
     
   </v-app>

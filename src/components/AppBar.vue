@@ -4,7 +4,7 @@
         <v-app-bar-title>Biblioteca</v-app-bar-title>
         <div class="menu">
             <button @click="$router.push('/books/create/')">Livro</button>
-            <button @click="$router.push('/books/create/')">Emprestimos</button>
+            <button @click="$router.push('/emprestimos')">Emprestimos</button>
             <div class="profile">
                 <span class="mdi mdi-account-circle"></span>
                 <p>username</p>
@@ -17,18 +17,7 @@
 <script>
 export default {
 
-    data() {
-        return {
 
-        }
-    },
-
-    methods: {
-        navegationToBooks() {
-
-
-        }
-    },
 
 
 }

@@ -28,7 +28,7 @@ const router = createRouter({
       component:CreateBookView
     },
     {
-      path: '/user/emprestimos',
+      path: '/emprestimos',
       name: 'list-emprestimos',
       component:ListEmprestimos
     },

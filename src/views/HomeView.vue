@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import AppBar from '../components/AppBar.vue';
 import ListBooks from '../components/ListBooks.vue';
 
 </script>
